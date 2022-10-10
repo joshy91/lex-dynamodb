@@ -44,7 +44,7 @@ Resources:
       Description: Log Lex intent to a DynamoDB table
       CodeUri: s3://mk-sam-packages/log-intent.zip
       Handler: index.handler
-      Runtime: nodejs8.10
+      Runtime: nodejs12.x
       Policies:
       - DynamoDBCrudPolicy:
         TableName: !Ref DynamoDBTable
